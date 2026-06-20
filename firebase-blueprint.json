@@ -1,0 +1,51 @@
+{
+  "collections": [
+    {
+      "name": "products",
+      "fields": [
+        { "name": "title", "type": "string" },
+        { "name": "description", "type": "string" },
+        { "name": "price", "type": "number" },
+        { "name": "image", "type": "string" },
+        { "name": "categoryId", "type": "string" },
+        { "name": "createdAt", "type": "timestamp" }
+      ]
+    },
+    {
+      "name": "categories",
+      "fields": [
+        { "name": "name", "type": "string" },
+        { "name": "createdAt", "type": "timestamp" }
+      ]
+    },
+    {
+      "name": "settings",
+      "fields": [
+        { "name": "type", "type": "string" }, 
+        { "name": "url", "type": "string" },
+        { "name": "createdAt", "type": "timestamp" }
+      ]
+    },
+    {
+      "name": "orders",
+      "fields": [
+        { "name": "userId", "type": "string" },
+        { "name": "items", "type": "array" },
+        { "name": "total", "type": "number" },
+        { "name": "status", "type": "string" }, 
+        { "name": "address", "type": "map" },
+        { "name": "createdAt", "type": "timestamp" }
+      ]
+    },
+    {
+      "name": "users",
+      "fields": [
+        { "name": "displayName", "type": "string" },
+        { "name": "email", "type": "string" },
+        { "name": "photoURL", "type": "string" },
+        { "name": "address", "type": "map" },
+        { "name": "createdAt", "type": "timestamp" }
+      ]
+    }
+  ]
+}
